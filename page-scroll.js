@@ -33,7 +33,7 @@ $(function () {
             console.log("kita");
         }).blur(function () {
             console.log("hazureta");
-            $(window).scrollTop(50);
+            $(window).scrollTop(0);
         });
     });
     // $('#search-keyword').on('keydown', function (event) {
