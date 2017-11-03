@@ -28,6 +28,23 @@ $(function () {
     setNav.find('li:first').addClass('activeStage');
     $('body').attr('data-page', '1');
 
+    $(function () {
+        $('#search-keyword').focus(function () {
+            console.log("kita");
+        }).blur(function () {
+            console.log("hazureta");
+            $(window).scrollTop(50);
+        });
+    });
+    // $('#search-keyword').on('keydown', function (event) {
+    //     var RETURN_KEY_CODE = 13;
+    //     if (event.which == RETURN_KEY_CODE) {
+    //         alert("fdfdfd");
+    //         $(window).scrollTop(0);
+
+    //     }
+    // });
+
     $(window).load(function () {
         // StageHeight
         $(window).resize(function () {
